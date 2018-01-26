@@ -2,18 +2,19 @@
 //  ViewController.swift
 //  CreateQRCodeDemo
 //
-//  Created by miaolin on 16/5/13.
-//  Copyright © 2016年 赵攀. All rights reserved.
+//  Created by apple on 2018/1/26.
+//  Copyright © 2018年 ZP. All rights reserved.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var imageV: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageView.cerateQRCode(UIImage(named: "xuexi8_logo"), message: "学习8", iconImageSize: 20)
+        
+        imageV.cerateQRCode(iconImage: UIImage(named: "QQ20171218-0的副本 6-5"), message: "https://www.baidu.com/", iconImageSize: 30)
     }
 
 
